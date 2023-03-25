@@ -5,12 +5,13 @@ $(function () {
   var currentDayP = $("#currentDay");
   var saveBtn = $(".saveBtn");
   var today = dayjs();
-  // var timeBlock = $(".time-block");
-  // var textArea = $(".description");
+  
+  $(".time-block").each(function (){
+    var index = $(this).attr("id");
+    var savedText = JSON.parse(localStorage.getItem(index));
+    $(this).children("textarea").val(savedText)
+  })
 
-  // timeBlock.on("click", function(){
-  //   console.log($(this).children("textarea").val());
-  // })
   saveBtn.on("click", function (){
     var textFieldContent = $(this).siblings("textarea").val();
     var textID = $(this).parent().attr("id");
