@@ -3,8 +3,15 @@
 // in the html.
 $(function () {
   var currentDayP = $("#currentDay");
+  var saveBtn = $(".saveBtn");
   var today = dayjs();
+  // var textArea = $(".description");
 
+  saveBtn.on("click", function (event){
+    console.log($(event.target).text());
+
+  })
+  
   // TODO: Add code to display the current date in the header of the page.
   currentDayP.text(today.format("[Today is] MMMM D, YYYY"));
   
