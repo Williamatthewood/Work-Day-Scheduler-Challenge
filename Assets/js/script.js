@@ -12,7 +12,10 @@ $(function () {
   //   console.log($(this).children("textarea").val());
   // })
   saveBtn.on("click", function (){
-    console.log($(this).siblings("textarea").val());
+    var textFieldContent = $(this).siblings("textarea").val();
+    var textID = $(this).parent().attr("id");
+    console.log(textID);
+    localStorage.setItem(textID, JSON.stringify(textFieldContent));
 
   })
   
