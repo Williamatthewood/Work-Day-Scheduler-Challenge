@@ -97,10 +97,13 @@ You are required to submit the following for review:
 
 ## Description
 
+The day planner dynamically updates based on the time of day. It will show gray boxes for past hours, red for the current hour, and green for the future hours. When the user types in what they want to do during that hour, they can click the save button to save the text to local storage. Upon reload, those items will persist, while the color of each hour will change upon each reload. The current day is always displayed dynamically at the top of the page. 
 
 
 ## Screenshots
+<img width="1399" alt="Screenshot 2023-03-25 at 3 26 28 PM" src="https://user-images.githubusercontent.com/112597870/227739952-21843187-1cba-4d47-a15a-54788942af4c.png">
 
+<img width="1427" alt="Screenshot 2023-03-25 at 3 26 17 PM" src="https://user-images.githubusercontent.com/112597870/227739954-8ad260d7-e93c-4f3c-b086-53aa310f3510.png">
 
 
 ## Deployed Application
