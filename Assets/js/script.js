@@ -5,10 +5,14 @@ $(function () {
   var currentDayP = $("#currentDay");
   var saveBtn = $(".saveBtn");
   var today = dayjs();
+  // var timeBlock = $(".time-block");
   // var textArea = $(".description");
 
-  saveBtn.on("click", function (event){
-    console.log($(event.target).text());
+  // timeBlock.on("click", function(){
+  //   console.log($(this).children("textarea").val());
+  // })
+  saveBtn.on("click", function (){
+    console.log($(this).siblings("textarea").val());
 
   })
   
